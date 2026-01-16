@@ -1,3 +1,4 @@
+
 /*?-------Inicio estilos NavBar-------*/
 .navbar {
   background-color: #333;
@@ -176,4 +177,75 @@
 }
 
 
+
+body{
+background: #EF3B36;  
+background: -webkit-linear-gradient(to right, #FFFFFF, #EF3B36);  
+background: linear-gradient(to right, #FFFFFF, #EF3B36); 
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h6{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.contenedor{
+    display: flex;
+}
+
+.carta{
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 200px;
+    background-color: #fff;
+    flex: 1;
+    transition: .3 all ease;
+    font-size: x-large;
+}
+.contenedor{
+    display: flex;
+}
+
+.carta{
+    border-radius: 20px;
+    margin-left: 10px;
+    height: 200px;
+    background-color: #fff;
+    flex: 1;
+    transition: .3 all ease;
+    font-size: x-large;
+}
+
+.imagen{
+    width: 200px;      
+    height: auto;     
+    display: block;    
+    margin: 10px auto;
+
+}
 
