@@ -16,3 +16,24 @@ document.addEventListener("DOMContentLoaded", () => {
     incluirComponente("contact-placeholder", "contact.html");
     incluirComponente("footer-placeholder", "footer.html");
 });
+
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+    const alertBtn = document.getElementById('successAlert');
+    const appendAlert = (message, type) => {
+        const wrapper = document.createElement('div');
+        wrapper.innerHTML = [
+            `<div class="alert alert-${type} alert-dismissible fade show" role="alert">`,
+            `   <div>${message}</div>`,
+            '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+            '</div>'
+        ].join('');
+
+        alertPlaceholder.append(wrapper);
+    };
+
+    // 2. Evento de clic
+    if (alertBtn) {
+        alertBtn.addEventListener('click', () => {
+            appendAlert('Mensaje Enviado', 'warning');
+        });
+    }

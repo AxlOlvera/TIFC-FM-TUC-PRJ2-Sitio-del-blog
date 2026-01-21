@@ -34,17 +34,16 @@
                             <textarea class="form-control" id="messageInput" placeholder="Escribe tu mensaje" rows="5"
                                 required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">ENVIAR MENSAJE</button>
+                        <button type="submit" class="btn btn-primary w-100" id="successAlert">ENVIAR MENSAJE</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="alert alert-success alert-dismissible fade d-none" id="successAlert" role="alert">
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-    
+    <div class="mb-3" id="liveAlertPlaceholder" role="alert"> </div>
+
+
 </section>
 <div id="footer-placeholder"></div>
 
@@ -53,13 +52,3 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 <script src="script.js"></script>
-<script>
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-        e.preventDefault();
-        const email = document.getElementById('emailInput').value;
-        const message = document.getElementById('messageInput').value;
-        const alert = new bootstrap.Alert(document.getElementById('successAlert'));
-        alert.show();
-        this.reset();
-    });
-</script>
